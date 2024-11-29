@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/style-ltr.min.css" /> -->
+
+    <link rel="stylesheet" href="../assets/css/styles-ltr.css" />
+    <title>FBF Register</title>
+  </head>
+  <body>
+    <button id="gotToTopButton" title="Go to top">
+      <i class="icon icon-down-arrow"></i>
+    </button>
+    <div class="loader">
+      <div class="loader__item">
+        <img src="../assets/images/logo-white.png" alt="Logo" />
+        <div></div>
+      </div>
+    </div>
+
+    <!-- HEADER SECTION START -->
+    <header class="header">
+      <nav class="header__nav header__nav--home">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 d-flex">
+              <a href="" class="header__nav__logo">
+                <img
+                  src="../../assets/img/logo.png"
+                  alt="Logo"
+                  class="header__nav__logo-img"
+                />
+              </a>
+              <ul class="header__nav__items">
+                <li class="header__nav__item header__nav__item--active">
+                  <a href="#" class="header__nav__item__link">About</a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link"
+                    >Projects Owners</a
+                  >
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link"
+                    >Why Get Involved?
+                  </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">Agenda </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">Gallery </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link"
+                    >Sponsors & Partners
+                  </a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="#" class="header__nav__item__link">Contact </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 header__nav__access">
+              <div class="dropdown header__nav__change-lang">
+                <button
+                  class="
+                    btn btn-secondary
+                    dropdown-toggle
+                    header__nav__change-lang__button
+                  "
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  English
+                  <i
+                    class="
+                      icon icon-down-arrow
+                      header__nav__change-lang__button__icon
+                    "
+                  ></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Arabic</a>
+                  <a class="dropdown-item" href="#">English</a>
+                </div>
+              </div>
+              <button class="btn btn--primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__mobile-nav">
+        <div
+          class="
+            container
+            header__mobile-nav__container
+            d-flex
+            align-items-center
+            justify-content-between
+          "
+        >
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+              <i class="icon icon-menu"></i>
+            </a>
+            <a href="#" class="header__mobile-nav__logo">
+              <img src="../assets/images/logo.png" alt="Logo" />
+            </a>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <!-- <i
+              class="icon icon-search header__mobile-nav__search-button"
+              id="openSearchBtnWithMobile"
+            ></i> -->
+            <div class="dropdown">
+              <div class="dropdown header__nav__change-lang">
+                <button
+                  class="
+                    btn btn-secondary
+                    dropdown-toggle
+                    header__nav__change-lang__button
+                  "
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  English
+                  <i
+                    class="
+                      icon icon-down-arrow
+                      header__nav__change-lang__button__icon
+                    "
+                  ></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Arabic</a>
+                  <a class="dropdown-item" href="#">English</a>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="header__mobile-nav__account"
+                type="button"
+                id="changeLang"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ‏
+                <i class="icon icon-user"></i>
+              </a>
+              <div
+                class="dropdown-menu header__mobile-nav__account-dropdown"
+                aria-labelledby="changeLang"
+              >
+                <!-- <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a> -->
+                <a class="w-100 text-center btn btn--outline" href="#">Login</a>
+                <a class="w-100 text-center btn btn--primary" href="#"
+                  >Register</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__mobile">
+        <nav class="nav-drill">
+          <a href="#" id="closeMenu">x</a>
+          <ul class="nav-items nav-level-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Projects Owners </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Why Get Involved? </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Agenda </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Gallery </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Sponsors & Partners </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contact </a>
+            </li>
+
+            <ul class="social-links mt-5 mx-3">
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-youtube"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-instagram"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-twitter"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__main header__main--auth">
+        <!-- <div class="header__main__bg"></div> -->
+        <div class="container header__main__container">
+          <div class="header__main__project header__main__project--auth">
+            <form action="" class="login__form">
+              <h2 class="text-center heading-1">Register</h2>
+              <div class="form-group">
+                <label class="utl-form-label" for="username">Username</label>
+                <input
+                  type="text"
+                  class="form-control form-input"
+                  placeholder="Please enter your username"
+                />
+              </div>
+              <div class="form-group">
+                <label class="utl-form-label" for="email">Email</label>
+                <input
+                  id="email"
+                  type="text"
+                  class="form-control form-input"
+                  placeholder="Please enter your email"
+                />
+              </div>
+              <div class="form-group">
+                <label class="utl-form-label" for="phone">Phone No.</label>
+                <input
+                  id="phone"
+                  type="text"
+                  class="form-control form-input"
+                  placeholder="Please enter your phone number."
+                />
+              </div>
+              <div class="form-group position-relative">
+                <label class="utl-form-label" for="password">Password</label>
+                <i class="icon icon-eye-2 show-password"></i>
+                <input
+                  id="password"
+                  type="password"
+                  class="form-control form-input"
+                  placeholder="******************"
+                />
+              </div>
+              <div class="form-group position-relative">
+                <label class="utl-form-label" for="confirmPassword"
+                  >Confirm password</label
+                >
+                <i class="icon icon-eye-2 show-password"></i>
+                <input
+                  id="confirmPassword"
+                  type="password"
+                  class="form-control form-input"
+                  placeholder="******************"
+                />
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="">For get your password?</a>
+                <button class="btn utl-btn-primary">Login</button>
+              </div>
+              <div class="mt-5">
+                <button class="btn btn--primary">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <div class="footer__item">
+            <h2 class="footer__item__title">
+              <img src="../assets/images/logo-white.png" alt="Logo" />
+            </h2>
+
+            <p class="footer__item__text">
+              The Kingdom has established its economic status globally in a way
+              that it plays a prominent role among the major countries
+            </p>
+          </div>
+          <div class="footer__item">
+            <h2 class="footer__item__title">Contact Us</h2>
+            <ul class="footer__item__contact">
+              <li>
+                <i class="icon icon-email-0"></i>
+                <span>events@sca.sa</span>
+              </li>
+              <li>
+                <i class="icon icon-phone-0"></i>
+                <span>+966 920000968</span>
+              </li>
+              <li>
+                <i class="icon icon-phone-0"></i>
+                <span>+966 920000968</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__item">
+            <h2 class="footer__item__title">Follow us</h2>
+            <ul class="social-links">
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-youtube"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-instagram"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-twitter"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-facebook"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-linkedin-3"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright__heading">
+          Copyright 2021 © Future Projects Forum | All rights reserved | Privacy
+          policy
+        </p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Modal Start -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Saudi Aramco Details
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-start">
+              <img src="../assets/images/owners/1.png" alt="" />
+              <p>
+                Leading producer of the energy and chemicals that drive global
+                commerce and enhance the daily lives of people around the globe.
+                From our proven upstream capabilities and our strategically
+                integrated global downstream network, to our cutting edge
+                sustainability technologies, we have created an unsurpassed
+                value engine that places us in a category all our own.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn--outline">
+              Visit Website
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Edn -->
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

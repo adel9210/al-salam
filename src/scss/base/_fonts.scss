@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// ARABIC FONT
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: Almarai;
+  src: url("../fonts/Almarai-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Almarai;
+  src: url("../fonts/Almarai-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Almarai;
+  src: url("../fonts/Almarai-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Almarai;
+  src: url("../fonts/Almarai-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+//// -----------------------------------------------------------------------------
+//// ENGLISH FONT
+//// -----------------------------------------------------------------------------
+//
+//$FONT_URL: '../fonts/Nunito-';
+//$fonts: (
+//  'Bold': '600',
+//  'ExtraBold': '900',
+//  'ExtraLight': '100',
+//  'Light': '200',
+//  'Regular': '400',
+//  'SemiBold': '500',
+//);
+//@each $font, $wight in $fonts {
+//  @font-face {
+//    font-family: SCA-Font-ENGLISH;
+//    src: url(#{$FONT_URL} + #{$font} + ".ttf") format('truetype');
+//    font-weight: #{$wight};
+//    // font-style: normal;
+//  }
+//}

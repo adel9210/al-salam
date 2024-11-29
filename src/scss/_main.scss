@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+// ABSTRACT
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins',
+  'abstracts/custom';
+
+// BASE
+@import 'base/rest', 'base/base', 'base/fonts', 'base/typography', 'base/rest',
+  'base/icon/style.scss';
+
+@import 'helper/helpers';
+
+// COMPONENT
+@import 'components/carousel', 'components/social-links', 'components/scroll',
+  'components/spinner', 'components/mobile-menu', 'components/form',
+  'components/breadcrumb', 'components/pagination', 'components/card',
+  'components/buttons', 'components/table', 'components/modal', 'components/FAQ',
+  'components/count-down';
+
+// PAGES
+@import 'pages/home', 'pages/checkout', 'pages/booking';
+
+// LAYOUT
+@import 'layout/header', 'layout/footer';

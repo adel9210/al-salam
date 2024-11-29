@@ -1,0 +1,67 @@
+.booking {
+  &__seats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+
+    &__item {
+      text-align: center;
+      margin-inline-start: 50px;
+      &__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        background-color: #0e850e;
+        color: $color-white;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+
+      &__heading {
+        font-size: rem(16);
+        font-weight: bold;
+        margin-block-start: 5px;
+      }
+
+      &__price {
+        font-size: rem(14);
+      }
+
+      &:nth-child(2) {
+        .booking__seats__item__icon {
+          background-color: #f8b646;
+        }
+      }
+      &:nth-child(3) {
+        .booking__seats__item__icon {
+          background-color: #7d4092;
+        }
+      }
+      &:nth-child(4) {
+        .booking__seats__item__icon {
+          background-color: #1284ba;
+        }
+      }
+      &:nth-child(5) {
+        .booking__seats__item__icon {
+          background-color: #cc0601;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      // align-items: flex-start;
+      &__item {
+        margin: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
