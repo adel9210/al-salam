@@ -1,10 +1,8 @@
 .footer {
-  background-color: $secondary-color;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  margin-top: 300px;
-  padding: 100px 0;
-  padding-bottom: 40px;
+  background: linear-gradient(290deg, rgba(39, 60, 42, 0.95) 44.05%, rgba(30, 33, 30, 0.95) 91.3%);
+
+  padding: 60px 0;
+  padding-bottom: 0;
 
   &__list {
     display: flex;
@@ -31,25 +29,20 @@
 
     &__title {
       margin-bottom: 20px;
+      font-size: 24px;
     }
 
-    &__contact {
-      li {
-        display: flex;
-        align-items: center;
-        font-size: rem(14);
-        font-weight: 100;
-        &:not(:last-child) {
-          margin-bottom: 15px;
-        }
-
-        .icon {
-          margin-inline-end: 10px;
-          color: $primary-color;
-          font-size: rem(20);
-        }
+    &__links {
+      a {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 15px;
+        display: inline-block;
       }
     }
+
 
     &:not(:last-child) {
       margin-inline-end: 100px;
@@ -67,9 +60,9 @@
   }
 
   &__copyright {
+    background-color: #384539;
     &__heading {
-      padding: 40px;
-      padding-bottom: 0;
+      padding: 10px;
       margin-top: 40px;
       border-top: 1px solid $primary-color;
       text-align: center;

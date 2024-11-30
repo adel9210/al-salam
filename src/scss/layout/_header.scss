@@ -5,10 +5,8 @@
   position: relative;
 
   &__nav {
-    //background-color: $primary-color;
     color: $color-white;
     padding: 12px 0;
-    //box-shadow: $main-box-shadow;
 
     &__logo {
       margin-#{$right}: 40px;
@@ -30,25 +28,14 @@
       &__link {
         font-size: rem(16);
         font-weight: 500;
+        transition: all .5s;
       }
 
       &:hover,
       &--active {
-        &::after {
-          width: 100% !important;
-        }
+       color: #BE9137;
       }
 
-      &::after {
-        transition: all 0.3s ease-in-out;
-        content: '';
-        height: 2px;
-        width: 0;
-        background-color: #fff;
-        position: absolute;
-        #{$left}: 0;
-        bottom: -15px;
-      }
     }
 
     &__access {
@@ -67,13 +54,14 @@
         display: flex;
         align-items: center;
         column-gap: 5px;
+        color: #fff;
 
         &:hover,
         &:focus,
         &:focus-within,
         &:active {
           background-color: transparent !important;
-          color: #474b4d !important;
+          color: #BE9137 !important;
           border: 0 !important;
           box-shadow: none !important;
         }
@@ -263,7 +251,6 @@
 }
 
 #gotToTopButton {
-  display: none;
   position: fixed;
   bottom: 20px;
   #{$left}: 30px;
@@ -271,11 +258,10 @@
   font-size: 10px;
   border: none;
   outline: none;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
   width: 45px;
   height: 45px;
   display: flex;

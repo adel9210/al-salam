@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-  const testimonials = new Swiper(".goals__swiper", {
+  const goalsSwiper = new Swiper(".goals__swiper", {
     observer: true,
     spaceBetween: 30,
     navigation: {
@@ -8,6 +8,7 @@ jQuery(document).ready(function ($) {
       prevEl: ".goals__swiper .swiper-navigation-prev",
     },
     pagination: {
+      el: ".goals__swiper .swiper-pagination",
       clickable: true,
     },
     breakpoints: {
