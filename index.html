@@ -48,13 +48,40 @@
               <li class="header__nav__item">
                 <a href="#agenda" class="header__nav__item__link">أهدافنا </a>
               </li>
-              <li class="header__nav__item">
-                <a href="#gallery" class="header__nav__item__link">الخدمات القانونية
+              <li class="header__nav__item header__nav__item--nested">
+                <a
+                        href="#sponsors" class="header__nav__item__link"
+                        data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"
+                        id="dropdownMenuButton3"
+                >
+                  الخدمات القانونية
+                  <i class="
+                      icon icon-down-arrow
+                    "></i>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <a class="dropdown-item" href="#">االخدمات القانونية 1</a>
+                  <a class="dropdown-item" href="#">الأستشارات القانونية 2</a>
+                </div>
               </li>
-              <li class="header__nav__item">
-                <a href="#sponsors" class="header__nav__item__link">الأستشارات القانونية
+
+              <li class="header__nav__item header__nav__item--nested">
+                <a
+                  href="#sponsors" class="header__nav__item__link"
+                  data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"
+                  id="dropdownMenuButton2"
+                >
+                  الأستشارات القانونية
+                  <i class="
+                      icon icon-down-arrow
+                    "></i>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <a class="dropdown-item" href="#">الأستشارات القانونية1</a>
+                  <a class="dropdown-item" href="#">الأستشارات القانونية2</a>
+                </div>
               </li>
             </ul>
           </div>
@@ -170,17 +197,17 @@
     </div>
     <div class="header__statistics">
       <div class="header__statistics__item">
-        <i class="header__statistics__item__icon icon icon-users-group"></i>
+        <img src="assets/images/icons/question-mark.svg" class="header__statistics__item__icon" />
         <h2 class="header__statistics__item__title">عدد الأستشارات</h2>
         <p class="header__statistics__item__count">289+</p>
       </div>
       <div class="header__statistics__item">
-        <i class="header__statistics__item__icon icon icon-users-group"></i>
+        <img src="assets/images/icons/users.svg" class="header__statistics__item__icon" />
         <h2 class="header__statistics__item__title"> عدد العملاء</h2>
         <p class="header__statistics__item__count">177+</p>
       </div>
       <div class="header__statistics__item">
-        <i class="header__statistics__item__icon icon icon-users-group"></i>
+        <img src="assets/images/icons/justice.svg" class="header__statistics__item__icon" />
         <h2 class="header__statistics__item__title">عدد الخدمات </h2>
         <p class="header__statistics__item__count">47+</p>
       </div>
@@ -360,11 +387,11 @@
         </div>
 
         <div class="swiper-navigation goals__swiper__navigation">
-          <a class="swiper-navigation-next" href="#">
+          <a class="swiper-navigation-prev" href="#">
             <i class="icon icon-arrow-right-0"></i>
           </a>
           <div class="swiper-pagination goals__swiper__pagination"></div>
-          <a class="swiper-navigation-prev" href="#">
+          <a class="swiper-navigation-next" href="#">
             <i class="icon icon-arrow-left-0"></i>
           </a>
         </div>
@@ -394,7 +421,7 @@
 <!-- SERVICES SECTION START  -->
   <section class="services">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-3">
           <div class="co-service">
             <img class="co-service__icon" src="assets/images/icons/justice.svg" alt="">
@@ -409,7 +436,7 @@
             <h2 class="co-service__title">القضايا الأسرية</h2>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 services__image-wrapper">
           <img class="services__image" src="assets/images/services.png" alt="Services">
 
         </div>
@@ -440,41 +467,80 @@
         <h2 class="our-services__title">الخدمات واالستشارات المهنية</h2>
         <button class="btn btn--secondary">عرض المزيد</button>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="co-our-service">
-            <img src="assets/images/service-1.png" alt="Service">
-            <div class="co-our-service__content">
-              <h2 class="co-our-service__title">الأستشارات الضريبية</h2>
-              <p class="co-our-service__text">
-                . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.
-              </p>
+
+      <div class="swiper-container our-services__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="co-our-service">
+              <img src="assets/images/service-1.png" alt="Service">
+              <div class="co-our-service__content">
+                <h2 class="co-our-service__title">الأستشارات الضريبية</h2>
+                <p class="co-our-service__text">
+                  . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="co-our-service">
-            <img src="assets/images/service-2.png" alt="Service">
-            <div class="co-our-service__content">
-              <h2 class="co-our-service__title">الأستشارات الضريبية</h2>
-              <p class="co-our-service__text">
-                . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.
-              </p>
+          <div class="swiper-slide">
+            <div class="co-our-service">
+              <img src="assets/images/service-2.png" alt="Service">
+              <div class="co-our-service__content">
+                <h2 class="co-our-service__title">الأستشارات الضريبية</h2>
+                <p class="co-our-service__text">
+                  . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="co-our-service">
-            <img src="assets/images/service-3.png" alt="Service">
-            <div class="co-our-service__content">
-              <h2 class="co-our-service__title">الأستشارات الضريبية</h2>
-              <p class="co-our-service__text">
-                . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.
-              </p>
+          <div class="swiper-slide">
+            <div class="co-our-service">
+              <img src="assets/images/service-3.png" alt="Service">
+              <div class="co-our-service__content">
+                <h2 class="co-our-service__title">الأستشارات الضريبية</h2>
+                <p class="co-our-service__text">
+                  . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+<!--      <div class="row">-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="co-our-service">-->
+<!--            <img src="assets/images/service-1.png" alt="Service">-->
+<!--            <div class="co-our-service__content">-->
+<!--              <h2 class="co-our-service__title">الأستشارات الضريبية</h2>-->
+<!--              <p class="co-our-service__text">-->
+<!--                . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="co-our-service">-->
+<!--            <img src="assets/images/service-2.png" alt="Service">-->
+<!--            <div class="co-our-service__content">-->
+<!--              <h2 class="co-our-service__title">الأستشارات الضريبية</h2>-->
+<!--              <p class="co-our-service__text">-->
+<!--                . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="co-our-service">-->
+<!--            <img src="assets/images/service-3.png" alt="Service">-->
+<!--            <div class="co-our-service__content">-->
+<!--              <h2 class="co-our-service__title">الأستشارات الضريبية</h2>-->
+<!--              <p class="co-our-service__text">-->
+<!--                . استمتع بخدمات قانونية استثنائية مصممة خصيصًا لتلبية احتياجاتك. يقدم فريق الخبراء لدينا دعمًا موثوقًا وفعالًا واحترافيًا، مما يضمن أعلى معايير الجودة والخبرة في كل مسألة قانونية نتعامل معها.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </section>
 <!-- CONSULTANTS SERVICES SECTION END -->

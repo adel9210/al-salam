@@ -1,5 +1,6 @@
 .vision {
-  background-color: #4f6150;
+  background: linear-gradient(0deg, #506252, #506252),
+  linear-gradient(360deg, #506252 76.53%, #3B4D3D 174.17%);
   color: #fff;
   padding: 40px 0;
   text-align: center;
@@ -69,6 +70,10 @@
         justify-content: center;
         align-items: center;
         color: #fff;
+
+        &.swiper-button-disabled {
+          opacity: .5;
+        }
 
       }
     }
@@ -143,11 +148,14 @@
     font-size: rem(20);
     font-weight: 400;
     margin-bottom: 12px;
+    color: #434343;
   }
 
   &__description {
     font-size: rem(16);
     font-weight: 200;
+    color: #434343;
+    line-height: 28px;
 
     // truncate after 3 lines
     display: -webkit-box;
@@ -179,19 +187,19 @@
 
   &__info {
     background: #4d5f4e;
-    padding: 40px;
+    padding: 50px;
     border-radius: 24px;
-    flex: 2;
+    flex: 3;
   }
 
   &__title {
-    font-size: 25px;
+    font-size: 28px;
     margin-bottom: 15px;
     font-weight: 700;
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 15px;
     line-height: 1.7;
     width: 80%;
@@ -203,8 +211,13 @@
       flex-direction: column;
     }
 
+    &__title {
+      font-size: 22px;
+    }
+
     &__text {
       width: 100%;
+      font-size: 16px;
     }
 
     &__image-wrapper {
@@ -224,8 +237,10 @@
   @include media-breakpoint-down(sm) {
     margin: 100px 0;
 
-    &__image {
-      display: none;
+    &__image-wrapper {
+      //display: none;
+      order: -1;
+      margin-bottom: 30px;
     }
   }
 }
@@ -323,7 +338,6 @@
 
   @include media-breakpoint-down(sm) {
     height: 400px;
-    margin-bottom: 30px;
   }
   }
 

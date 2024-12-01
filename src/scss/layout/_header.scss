@@ -36,6 +36,17 @@
        color: #BE9137;
       }
 
+      &--nested {
+        & .header__nav__item__link {
+          display: flex;
+          align-items: center;
+          column-gap: 8px;
+        }
+        .icon {
+          font-size: 10px;
+        }
+      }
+
     }
 
     &__access {
@@ -202,7 +213,7 @@
     column-gap: 50px;
     padding: 30px 60px;
     color: #fff;
-    background-color: #4f6150;
+    background: linear-gradient(360deg, #506252 -33.1%, #3B4D3D 121.83%);
     border-top-right-radius: 140px;
     border-top-left-radius: 140px;
     width: max-content;
@@ -218,7 +229,7 @@
       column-gap: 17px;
 
       &__icon {
-        font-size: rem(30);
+        width: 45px;
       }
 
       &__title {
@@ -255,12 +266,13 @@
       border-radius: 0;
       padding: 20px;
       row-gap: 10px;
+      width: 100%;
 
       &__item {
         column-gap: 10px;
 
         &__icon {
-          font-size: rem(20);
+          width: 35px;
         }
 
         &__title {
